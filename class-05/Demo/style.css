@@ -1,0 +1,27 @@
+/* #parent {
+    background-color:#845ec2;
+     position:relative;
+     height: 200vh;
+}
+
+#child-one {
+background-color:#ff5e78; 
+    position: sticky;
+    top:0;
+}
+
+#child-two {
+background-color:#ffcc29; 
+    position:static;
+}
+
+#child-three {
+    background-color:#295939;
+    position:static;
+}
+
+ */
+
+p{
+    font-family: 'Pangolin', cursive;
+} 
