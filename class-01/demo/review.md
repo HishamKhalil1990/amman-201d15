@@ -131,3 +131,14 @@ or make a file
 
  
 ```
+
+
+write about commands as well
+
+- `pwd`
+- Filepaths and up/down navigation concepts  
+- `tree`  
+- `ls`, `ls -la`  
+- `cd`, `mkdir`  
+- `touch`, `code`  
+- `mv`, `rm`, `cp`

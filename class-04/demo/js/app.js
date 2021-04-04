@@ -1,6 +1,81 @@
 'use strict';
 
 
+
+// review
+
+
+
+
+let userscore = 0;
+
+
+let guessAnOption = 'Name a Programming Language taught at Code Fellows';
+let answers = ['java', 'javascript', 'c#', 'c-sharp', 'c sharp', 'python'];
+let response = null
+let attempts = 6;
+
+// ************with label*********
+
+// hasAttempts:while (attempts) {
+
+//    response = prompt(guessAnOption + '. You have ' + attempts + ' left.').toLowerCase();
+//     attempts -= 1;
+
+//     for (let i = 0; i < answers.length; i++) {
+//       if (response === answers[i]) {
+//         alert('That is correct. here are all answers!\n'+answers);
+//         userscore += 1;
+//         break hasAttempts;
+//       }
+//     }
+
+//     alert('Sorry that is incorrect.');
+//   }
+//   if (!attempts) {
+//       alert('you ran out of tries here are the answers\n '+ answers)
+//   }
+
+
+
+
+// without label 
+for (let j = 0; j < 6; j++) {
+
+    response = prompt(guessAnOption + '. You have ' + attempts + ' left.').toLowerCase();
+    attempts -= 1;
+
+    for (let i = 0; i < answers.length; i++) {
+        if (response === answers[i]) {
+            alert('That is correct. Thanks for playing!');
+            alert('here are the correct asnwers ' + answers);
+            userscore += 1;
+            // break hasAttempts;
+            j = 6;
+        }
+    }
+    console.log(j);
+    if (j == 5) {
+        alert('sorry no more tries ' + answers);
+    } else if (j < 6) {
+        alert('Sorry that is incorrect.');
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // function declaration 
 
 // function welcomeMessage(){
@@ -83,7 +158,7 @@
 //     (function () {
 //         console.log(('goobye'));
 //     })();
-     
+
 // }
 
 // (function () {
@@ -141,9 +216,9 @@
 // let userAge = prompt('whats your age')
 // let getAge = function (year) {
 //     let output = 2021-year;
-    
+
 //     return output;
-    
+
 // }
 
 // console.log(getAge(userAge));
